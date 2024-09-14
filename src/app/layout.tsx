@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Creduπ",
-  description: "Creduπ - Credit Card Payment UPI Details Generator",
+  title: "Credπ",
+  description: "Credπ - Credit Card Payment UPI Details Generator",
 };
 
 export default function RootLayout({

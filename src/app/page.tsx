@@ -63,15 +63,15 @@ export default function Home() {
 
     const last4Digits = creditCard.slice(-4);
     const newUpiIDs: UPIData = {
-      Axis: `CC.91${mobileNumber}${last4Digits}@axisbank`,
+      AXIS: `CC.91${mobileNumber}${last4Digits}@axisbank`,
       ICICI: `ccpay.${creditCard}@icici`,
-      "AU Bank": `AUCC${mobileNumber}${last4Digits}@AUBANK`,
+      AU: `AUCC${mobileNumber}${last4Digits}@AUBANK`,
       IDFC: `${creditCard}.cc@idfcbank`,
       AMEX:
         creditCard.length === 15
           ? `AEBC${creditCard}@SC`
           : "Not applicable for 16-digit cards",
-      SBI: `Sbicard.${creditCard}@SBI`,
+      SBI: `sbicard.${creditCard}@SBI`,
     };
 
     setUpiIDs(newUpiIDs);
@@ -320,7 +320,7 @@ export default function Home() {
                               </DialogContent>
                             </Dialog>
                             <MotionButton
-                              className="w-full sm:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 text-white font-semibold rounded-xl"
+                              className="w-full lg:hidden sm:w-auto bg-gradient-to-r from-green-500 to-green-600 hover:opacity-90 text-white font-semibold rounded-xl"
                               whileHover={{
                                 scale: 1.05,
                                 boxShadow: "0 5px 10px rgba(0, 0, 0, 0.2)",
