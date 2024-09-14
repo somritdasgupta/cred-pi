@@ -117,7 +117,7 @@ export default function Home() {
           <CardHeader className="pb-2 relative z-10">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 filter blur-3xl transform -skew-y-6"></div>
             <CardTitle className="space-y-8 text-5xl font-extrabold text-white relative z-10">
-              Creduπ
+              Credπ
             </CardTitle>
           </CardHeader>
           <CardContent className="relative z-10">
